@@ -2,7 +2,7 @@ services:
   db:
     image: mariadb:latest
     volumes:
-      - db_data/var/lib/mariadb
+      - db_data:/var/lib/mariadb
     restart: always
     environment:
       - MARIADB_DATABASE=wordpress
